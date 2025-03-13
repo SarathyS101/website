@@ -51,7 +51,7 @@ export default function timelineProjects(){
                                         />
                                     </CardHeader>
                                     <CardContent className="p-4">
-                                        <h2 className="text-xl font-semibold">{"Officially a Tar Heel!"}</h2>
+                                        <h2 className="text-xl font-semibold">{"Bill Belicheck's House Yessir!!!"}</h2>
                                         <p className="text-gray-600">{"August 2024"}</p>
                                     </CardContent>  
                                 </Card>
