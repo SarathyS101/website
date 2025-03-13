@@ -1,8 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Dialog, DialogTrigger, DialogContent } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
-
 export default function Home() {
   return (
     <>
@@ -10,26 +7,28 @@ export default function Home() {
       <div className="grid grid-cols-2 w-full h-full">
         {/* Left Side - Image */}
         <div className="flex items-center justify-center bg-gray-200">
-          <img 
-            src="../imgs/headshot.jpg" 
+          <Image 
+            src="/imgs/headshot.jpg" 
             alt="Sarathy" 
+            width={400}
+            height={400}
             className="h-full w-full rounded-lg shadow-md object-cover"
           />
         </div>
 
         {/* Right Side - About Me */}
         <div className="flex flex-col justify-center h-full w-full px-16 bg-white">
-          <h1 className="text-4xl font-bold">Hi, I'm Sarathy!</h1>
+          <h1 className="text-4xl font-bold pt-10">{"Hi, I'm Sarathy!"}</h1>
           <p className="text-gray-700 mt-4 text-lg">
-            I'm currently a freshman at The University of North Carolina at Chapel Hill! I'm passionate about all things Software Engineering, Machine Learning, and AI.
+            {"I'm currently a freshman at The University of North Carolina at Chapel Hill! I'm passionate about all things Software Engineering, Machine Learning, and AI."}
           </p>
           <p className="text-gray-700 mt-4 text-lg">
-            When I'm not coding, I'm probably listening to music, working on cool projects, or exploring new ideas. 🚀
+            {"When I'm not coding, I'm probably listening to music, working on cool projects, or exploring new ideas. 🚀"}
           </p>
           <div className="flex items-center w-full my-6">
             <div className="flex-grow border-t border-gray-400"></div>
             <span className="mx-4 text-gray-700 font-semibold">
-              Resume
+             {" Resume"}
             </span>
             <div className="flex-grow border-t border-gray-400"></div>
           </div>
@@ -46,7 +45,7 @@ export default function Home() {
 
           <div className="flex items-center w-full my-6">
             <div className="flex-grow border-t border-gray-400"></div>
-            <span className="mx-4 text-gray-700 font-semibold">Follow for More About Me</span>
+            <span className="mx-4 text-gray-700 font-semibold">{"Follow for More About Me"}</span>
             <div className="flex-grow border-t border-gray-400"></div>
           </div>
 
